@@ -30,12 +30,12 @@ Enable Developer Mode for Kernel Extensions
 
 1. Open Terminal
 2. Enter the following…
-   	sudo nvram boot-args=kext-dev-mode=1
+   	- ```sudo nvram boot-args=kext-dev-mode=1```
 3. Copy M-AudioFireWireBeBoB.kext to /System/Library/Extensions/
 4. Enter the following commands...
-   	cd /System/Library/Extensions/
-   	sudo chmod -R 755 M-AudioFireWireBeBoB.kext
-   	sudo chown -R root:wheel M-AudioFireWireBeBoB.kext
+   	- ```cd /System/Library/Extensions/```
+   	- ```sudo chmod -R 755 M-AudioFireWireBeBoB.kext```
+   	- ```sudo chown -R root:wheel M-AudioFireWireBeBoB.kext```
 5. Reboot (or see optional next section first)
 
 -----
@@ -56,11 +56,11 @@ as it is unsigned. Here’s how...
 
 1. Open Terminal
 2. Enter the following command
-   	sudo nvram -d boot-args
+   	- ```sudo nvram -d boot-args```
 3. Reboot in Recovery Mode (CMD-R while turning on the Mac)
 4. Open Terminal
 5. Enter the following command...
-   	csrutil enable
+   	- ```csrutil enable```
 6. Reboot
 
 -----
