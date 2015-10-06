@@ -21,7 +21,7 @@ Disable System Integrity Protection - Skip this step for OS X 10.10 Yosemite
 1. Boot up in Recovery Mode (CMD-R while turning on the Mac)
 2. Open Terminal
 3. Enter the following command...
-   ```csrutil disable```
+   - ```csrutil disable```
 4. Reboot
 
 -----
