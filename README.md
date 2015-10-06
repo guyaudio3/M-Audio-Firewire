@@ -3,23 +3,25 @@
 Install M-Audio Kernel Extension (Driver)
 
 OS X 10.10.x Yosemite
+
 OS X 10.11.x El Capitan
 
 -----
 
 This allows the installation of unsigned kernel extensions.
+
 IT OPENS UP SEVERAL SECURITY VULNERABILITIES!
+
 Proceed if you are ok with that.
 
 -----
 
-Disable System Integrity Protection 
-Skip this step for OS X 10.10 Yosemite
+Disable System Integrity Protection - Skip this step for OS X 10.10 Yosemite
 
 1. Boot up in Recovery Mode (CMD-R while turning on the Mac)
 2. Open Terminal
 3. Enter the following command...
-	csrutil disable
+   	csrutil disable
 4. Reboot
 
 -----
@@ -28,12 +30,12 @@ Enable Developer Mode for Kernel Extensions
 
 1. Open Terminal
 2. Enter the following…
-	sudo nvram boot-args=kext-dev-mode=1
+   	sudo nvram boot-args=kext-dev-mode=1
 3. Copy M-AudioFireWireBeBoB.kext to /System/Library/Extensions/
 4. Enter the following commands...
-	cd /System/Library/Extensions/
-	sudo chmod -R 755 M-AudioFireWireBeBoB.kext
-	sudo chown -R root:wheel M-AudioFireWireBeBoB.kext
+   	cd /System/Library/Extensions/
+   	sudo chmod -R 755 M-AudioFireWireBeBoB.kext
+   	sudo chown -R root:wheel M-AudioFireWireBeBoB.kext
 5. Reboot (or see optional next section first)
 
 -----
@@ -54,11 +56,11 @@ as it is unsigned. Here’s how...
 
 1. Open Terminal
 2. Enter the following command
-	sudo nvram -d boot-args
+   	sudo nvram -d boot-args
 3. Reboot in Recovery Mode (CMD-R while turning on the Mac)
 4. Open Terminal
 5. Enter the following command...
-	csrutil enable
+   	csrutil enable
 6. Reboot
 
 -----
